@@ -12,10 +12,12 @@
         <nav class="menu">
             <ul>
                 <div>
+
                     <li class="side_bar">
                         <div class="profile-picture">
-                        <img src="images/69674904.jpeg"  onclick="enlargePicture()">
-                        <a href="#">HIMANSHU SHARMA</a>
+                            <img src="images/69674904.jpeg"  onclick="enlargePicture()">
+                            <a href="#">HIMANSHU SHARMA</a>
+                        </div>
                     </li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -30,11 +32,10 @@
                         </ul>
                     </li>
                 </div>
-                </ul>
-            </nav>
-            <div class="content">
-                <p><b>Hi,<br>I am Himanshu,<br>Student NiT,Agarpara</br></p>
-            </div>
+            </ul>
+        </nav>
+        <div class="content">
+            <p><b><span style="color: aqua; ">Hi,</span><br>I am Himanshu,<br>Student of NiT,Agarpara</br></p>
         </div>
     </div>
 
@@ -53,21 +54,29 @@
     </div>
 
     <script>
-    function enlargePicture() {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("modalImg");
-        var link = document.getElementById("link");
-        var imgSrc = document.querySelector(".profile-picture img").src;
+        document.addEventListener('mousemove', function(e) {
+            const text = document.querySelector('.content');
+            const xPos = (e.clientX / window.innerWidth) * 15;
+            const yPos = (e.clientY / window.innerHeight) * 10;
 
-        modal.style.display = "block";
-        modalImg.src = imgSrc;
-        link.style.display = "block"; 
-    }
+            text.style.textShadow = `${xPos}px ${yPos}px 10px rgba(0, 0, 0, 5)`
+        });
 
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-        document.getElementById("link").style.display = "none"; // Hide text when closing modal
-    }
+        function enlargePicture() {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImg");
+            var link = document.getElementById("link");
+            var imgSrc = document.querySelector(".profile-picture img").src;
+
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            link.style.display = "block"; 
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+            document.getElementById("link").style.display = "none"; // Hide text when closing modal
+        }
     </script>
 </body>
 </html>
