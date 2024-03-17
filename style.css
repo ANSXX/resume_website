@@ -145,3 +145,8 @@ body > div.container > nav > ul > div > li:nth-child(6) > ul{
     text-decoration: none;
     cursor: pointer;
 }
+div .content{
+    color:#fff;
+    font-size: 50px;
+
+}
