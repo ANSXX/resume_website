@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <ul>
+                <div>
+                    <li class="side_bar">
+                        <div class="profile-picture">
+                        <img src="images/69674904.jpeg"  onclick="enlargePicture()">
+                        <a href="#">HIMANSHU SHARMA</a>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <ul>
+                            <li><a id="logos" href="https://www.linkedin.com/in/himanshu-sharma-750a8a24b/" class="fa-brands fa-linkedin" target="blank"></a></li>
+                            <li><a id="logos" href="https://github.com/ANSXX" class="fa-brands fa-github" target="blank"></a></li>
+                            <li><a id="logos" href="https://www.instagram.com/areehimanshu/" class="fa-brands fa-instagram" target="blank"></a></li>
+                            <li><a id="logos" href="https://twitter.com/areehimanshu" class="fa-brands fa-x-twitter" target="blank"></a></li>
+                        </ul>
+                    </li>
+                </div>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>Welcome to My Website</h1>
+                <p>This is the main content of your website.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="">
+            <div id="link">
+                <a href="https://www.linkedin.com/in/himanshu-sharma-750a8a24b/" class="fa-brands fa-linkedin" target="blank"></a>
+                <a href="https://github.com/ANSXX" class="fa-brands fa-github" target="blank"></a>
+                <a href="https://www.instagram.com/areehimanshu/" class="fa-brands fa-instagram" target="blank"></a>
+                <a href="https://twitter.com/areehimanshu" class="fa-brands fa-x-twitter" target="blank"></a>
+            </div> 
+        </div>
+    </div>
+
+    <script>
+    function enlargePicture() {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImg");
+        var link = document.getElementById("link");
+        var imgSrc = document.querySelector(".profile-picture img").src;
+
+        modal.style.display = "block";
+        modalImg.src = imgSrc;
+        link.style.display = "block"; 
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        document.getElementById("link").style.display = "none"; // Hide text when closing modal
+    }
+    </script>
+</body>
+</html>
