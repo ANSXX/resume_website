@@ -1,18 +1,20 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     color: #fff;
     background-color: #333;
+    overflow-x: hidden;
 }
+
 .container {
     display: flex;
     height: 100vh;
-    
 }
 
 .menu {
-    width: 200px; 
+    width: 200px;
     background-color: #222;
     color: #fff;
 }
@@ -21,91 +23,96 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
 }
 
 .menu ul li {
     text-shadow: 2px 2px 10px #000;
     display: grid;
     grid-row-end: auto;
-    border:solid 1.5px #333;
+    border: solid 1.5px #333;
     padding: 0;
 }
-#link > a,
+
 .menu ul li a {
     text-decoration: none;
     color: #fff;
     padding: 35px;
     border: none;
-    
-    
 }
+
 a:active,
 .menu ul li a:hover {
     color: #fd2155;
 }
-body > div > nav > ul > div > li{
+
+body>div>nav>ul>div>li {
     font-size: 25px;
 }
 
-.content{
+.content {
     flex: 1;
     padding: 20px;
 }
+
 .profile-picture {
     text-shadow: 2px 2px 10px #000;
     padding: 20px;
     text-align: center;
-    transition: all 0.5s ease; /* Adding transition for smooth animation */
+    transition: all 0.5s ease;
 }
 
 .profile-picture img {
-    width: 125px; /* Adjust the size as needed */
-    border-radius: 50%; /* Makes the image round */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 125px;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.menu .side_bar:nth-child(1){
+
+.menu .side_bar:nth-child(1) {
     background-image: url(./images/art.gif);
-    background-size:150%;
+    background-size: 150%;
     font-weight: 600;
-    
 }
-.background-image{
-    filter:blur(15px);
+
+.background-image {
+    filter: blur(15px);
 }
-body > div.container > nav > ul > div > li:nth-child(1) > div > a:hover{
+
+body>div.container>nav>ul>div>li:nth-child(1)>div>a:hover {
     color: aqua;
     text-shadow: 2px 2px 5px #000;
 }
-.menu :nth-child(6){
+
+.menu :nth-child(6) {
     padding: 0;
 }
-body > div.container > nav > ul > div > li:nth-child(1) > div > a{
-    padding:0;
+
+body>div.container>nav>ul>div>li:nth-child(1)>div>a {
+    padding: 0;
 }
-body > div.container > nav > ul > div > li:nth-child(6) > ul{
+
+body>div.container>nav>ul>div>li:nth-child(6)>ul {
     padding: 0px;
     color: #000;
     display: grid;
     grid-template-columns: auto auto;
-    font-size:xx-large;
+    font-size: xx-large;
 }
-#link > a,
-body > div.container > nav > ul > div > li:nth-child(6) > ul>li{
+
+#link>a,
+body>div.container>nav>ul>div>li:nth-child(6)>ul>li {
     padding: 0;
     border-right-width: 0px;
 }
-body > div.container > nav > ul > div > li:nth-child(6) > ul :hover{
-    
+
+body>div.container>nav>ul>div>li:nth-child(6)>ul:hover {
     color: #000;
     text-shadow: 2px 2px 15px #fff;
 }
-/* New class to enlarge the picture */
+
 .profile-picture.enlarged img {
     width: 200px;
-    
 }
-/* Style the modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -117,14 +124,12 @@ body > div.container > nav > ul > div > li:nth-child(6) > ul :hover{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(109, 109, 109, 0.308); 
+    background-color: rgba(109, 109, 109, 0.308);
     padding: 20px;
     backdrop-filter: blur(5px);
 }
 
-/* Modal content */
-
-.modal-content #modalImg{
+.modal-content #modalImg {
     margin: auto;
     display: block;
     width: 80%;
@@ -133,29 +138,28 @@ body > div.container > nav > ul > div > li:nth-child(6) > ul :hover{
     border-radius: 50%;
     border: 0.05px solid #0c0c0ca6;
 }
-.modal-content #link{ 
+
+.modal-content #link {
     display: flex;
     padding: 60px;
     text-align: center;
-    
 }
-/*logos*/
 
-.modal-content #link a{
+.modal-content #link a {
     text-decoration: none;
-    font-size:30px;
+    font-size: 30px;
     padding: 20px;
     border: 0.5px solid #00000096;
     border-radius: 10px;
     color: #000;
-    
 }
-.modal-content #link a:hover{
+
+.modal-content #link a:hover {
     transition: all 0.5s ease;
-    background-color: rgba(0,0,0,0.7);
-    color:#fff
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
 }
-/* Close button */
+
 .close {
     position: absolute;
     top: 10px;
@@ -173,52 +177,53 @@ body > div.container > nav > ul > div > li:nth-child(6) > ul :hover{
     text-shadow: 0px 0px 10px #000;
     cursor: pointer;
 }
-/* home content */
-div .content{
+
+div .content {
     padding-left: 5rem;
-    color:#fd2155;
+    color: #fd2155;
     font-size: 100px;
     text-align: left;
     margin: auto auto;
     width: 50%;
 }
 
-#\33,#\32{
+#3,
+#2 {
     color: #fff;
     font-size: 2.5rem;
 }
-/* contact */
-#\34   
-{
-    
+
+#4 {
     text-shadow: 5px 0.5px 10px #000;
     color: aqua;
     text-decoration: none;
 }
-#\34  > p> span > a
-{
-    text-decoration:none; 
+
+#4>p>span>a {
+    text-decoration: none;
     color: #fff;
-    font-size:4rem;
+    font-size: 4rem;
 }
-#\34  > p> span > a:hover,
-#link > a:hover{
+
+#4>p>span>a:hover,
+#link>a:hover {
     color: #000;
     text-decoration: none;
     text-shadow: 0px 0px 10px #fff;
-    
-} 
-#\34  > p:nth-child(1){
-    margin:0;
+}
+
+#4>p:nth-child(1) {
+    margin: 0;
     margin-top: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-#link > a{
+
+#link>a {
     padding-left: 3rem;
     padding-right: 3rem;
-    
 }
+
 .resume_btn {
     border: none;
     padding: 15px 25px;
@@ -226,27 +231,66 @@ div .content{
     background-color: aqua;
     font-size: 0.5cm;
     cursor: pointer;
-    font-family:'Trebuchet MS';
-    
+    font-family: 'Trebuchet MS';
 }
-.resume_btn:hover{
+
+.resume_btn:hover {
     transition: background-color 0.5s ease-in-out;
-    background-color:#fd2155;
+    background-color: #fd2155;
     animation: rotateColors 2s infinite linear;
     transition: all 2s ease-in-out;
-
 }
+
 @keyframes rotateColors {
     50% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7),
-                    0 0 20px 5px rgba(253, 33, 85, 0.7),
-                    0 0 40px 10px rgba(255, 152, 0, 0.7),
-                    0 0 60px 15px rgba(31, 193, 55, 0.7);
+            0 0 20px 5px rgba(253, 33, 85, 0.7),
+            0 0 40px 10px rgba(255, 152, 0, 0.7),
+            0 0 60px 15px rgba(31, 193, 55, 0.7);
     }
     50% {
         box-shadow: 0 0 0 30px rgba(255, 255, 255, 0),
-                    0 0 20px 5px rgba(31, 193, 55, 0.7),
-                    0 0 40px 10px rgba(253, 33, 85, 0.7),
-                    0 0 60px 15px rgba(255, 152, 0, 0.7);
+            0 0 20px 5px rgba(31, 193, 55, 0.7),
+            0 0 40px 10px rgba(253, 33, 85, 0.7),
+            0 0 60px 15px rgba(255, 152, 0, 0.7);
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu ul li a {
+        padding: 15px; /* Adjust padding for smaller touch targets */
+    }
+
+    .profile-picture img {
+        width: 100px; /* Adjust profile picture size for smaller screens */
+    }
+
+    .modal-content #link a {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        padding: 10px 15px; /* Adjust padding for smaller touch targets */
+    }
+
+    .close {
+        right: 10px; /* Adjust position for smaller screens */
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+
+    .content {
+        padding: 20px;
+        font-size: 20px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center content on small screens */
+    }
+
+    .resume_btn {
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
 }
