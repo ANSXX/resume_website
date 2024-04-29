@@ -78,7 +78,7 @@
     </div>
 
     <script>
-        let currentContentId = '1'; // Initially set to 'Home' content
+        let currentContentId = '1';
 
         function enlargePicture() {
             var modal = document.getElementById("myModal");
@@ -86,28 +86,21 @@
             var link = document.getElementById("link");
             var imgSrc = document.querySelector(".profile-picture img").src;
 
-            // Display modal and enlarge picture
             modal.style.display = "block";
             modalImg.src = imgSrc;
             link.style.display = "block"; 
 
-            // Show initial content
             showContent('1');
         }
 
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
-            document.getElementById("link").style.display = "none"; // Hide text when closing modal
+            document.getElementById("link").style.display = "none";
         }
 
         function showContent(id) {
-            // Hide current content
-            document.getElementById(currentContentId).style.display = 'none';
-
-            // Show new content
-            document.getElementById(id).style.display = 'block';
-
-            // Update current content id
+            document.getElementById('content_' + currentContentId).style.display = 'none';
+            document.getElementById('content_' + id).style.display = 'block';
             currentContentId = id;
         }
 
